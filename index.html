@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Texto</title>
+    <link rel="shortcut icon" href="/img/oracle.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Prata&family=Russo+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Encriptador De texto</h1>
+    </header>
+
+    <main>
+        <!--PRIMERA SECCION-->
+        <div class="container">
+
+            <section class="primera">
+            
+                <textarea cols="30" rows="10" id="texto" placeholder="Ingresa el texto aquí" class="texto-1"></textarea>
+                
+                <textarea cols="30" id="resultText" rows="10" class="texto-2"></textarea>
+            
+            </section>
+            
+        </div>
+
+        <button type="button" class="btn-1" onclick="process('encrypt')">Encriptar</button>
+
+        <button type="button" class="btn-2" onclick="process('decrypt')">Desencriptar</button>
+        
+        <button type="button" class="btn-3" onclick="clearText()">Limpiar</button>
+
+        <button type="button" class="btn-4" onclick="copyToClipboard()">Copiar</button>
+        <!--PIE DE PAGINA-->
+        <footer class="footer">
+            
+            <div class="pie-pagina">
+                
+                <a href="https://github.com/FrancisoRocha">
+                    <img src="/img/github_733609.png" alt="Github">
+                </a>
+                
+                <a href="#">
+                    <img src="/img/js_5968292.png" alt="JavaScript">
+                </a>
+                
+                <a href="#">
+                    <img src="/img/html-5_5968267.png" alt="HTML">
+                </a>
+                
+                <a href="#">
+                    <img src="/img/css-3_5968242.png" alt="CSS">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/francisco-angel-dwf/">
+                    <img src="/img/social_14047229.png" alt="linkedin">
+                </a>
+            
+            </div>
+        
+        </footer>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
